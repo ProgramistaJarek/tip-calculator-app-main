@@ -1,0 +1,39 @@
+html,
+body {
+  //min-height: 100vh;
+  background-color: $light-grayish-cyan;
+}
+
+body{
+  h1{
+    font-family: $font-Space-Mono;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    color: $very-dark-cyan;
+    margin-top: 3rem;
+  }
+}
+
+// .from-main {
+//   display: grid;
+//   grid-template-columns: auto;
+//   grid-template-rows: auto;
+//   grid-template-areas:
+//     "bill "
+//     "tip"
+//     "people"
+//     "cost";
+// }
+// .grid-1 {
+//   grid-area: bill;
+// }
+// .grid-2 {
+//   grid-area: tip;
+// }
+// .grid-3 {
+//   grid-area: people;
+// }
+// .grid-4 {
+//   grid-area: cost;
+// }

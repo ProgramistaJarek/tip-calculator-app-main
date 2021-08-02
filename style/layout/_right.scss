@@ -1,0 +1,31 @@
+.right {
+  background-color: $very-dark-cyan;
+  color: $white;
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  margin-top: 1.5rem;
+  P {
+    color: $white;
+    font-weight: $font-700;
+    span {
+      color: $dark-grayish-cyan;
+      font-size: 0.9rem;
+    }
+    &:last-child{
+        margin-top: 1.5rem;
+    }
+  }
+  .btn{
+      width: 100%;
+      border-radius: 0.4rem;
+      border: none;
+      background-color: $strong-cyan;
+      color: $very-dark-cyan;
+      font-weight: $font-700;
+      text-transform: uppercase;
+      padding: 0.75rem 0;
+      font-weight: $font-700;
+      font-size: 20px;
+      margin-top: 1.5rem;
+  }
+}

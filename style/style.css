@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #c5e4e7;
+}
+
+body h1 {
+  font-family: "Space Mono", monospace;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  color: #00494d;
+  margin-top: 3rem;
+}
+
+form {
+  background-color: white;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  font-family: "Space Mono", monospace;
+}
+
+.bill p {
+  color: #5e7a7d;
+  font-weight: 700;
+}
+
+input {
+  font-weight: 700;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #f4fafa;
+  border: none;
+  color: #5e7a7d;
+  font-size: 24px;
+  text-align: right;
+  border-radius: 0.4rem;
+  margin-top: 0.2rem;
+}
+
+.tips {
+  margin-top: 1.5rem;
+}
+.tips P {
+  color: #5e7a7d;
+  font-weight: 700;
+}
+.tips .tip-btn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+.tips .tip-btn button {
+  background-color: #00494d;
+  color: white;
+  font-size: 24px;
+  margin: 0.4rem 0;
+  width: calc(50% - 0.5rem);
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0;
+}
+
+.no-people {
+  margin-top: 1.5rem;
+}
+.no-people P {
+  color: #5e7a7d;
+  font-weight: 700;
+}
+
+.right {
+  background-color: #00494d;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  margin-top: 1.5rem;
+}
+.right P {
+  color: white;
+  font-weight: 700;
+}
+.right P span {
+  color: #5e7a7d;
+  font-size: 0.9rem;
+}
+.right P:last-child {
+  margin-top: 1.5rem;
+}
+.right .btn {
+  width: 100%;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: #26c0ab;
+  color: #00494d;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.75rem 0;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
