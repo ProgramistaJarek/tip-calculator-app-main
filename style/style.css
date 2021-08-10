@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 *,
@@ -33,22 +34,48 @@ form {
   font-family: "Space Mono", monospace;
 }
 
+@media (min-width: 768px) {
+  form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 768px;
+    margin: 0 auto;
+    border-radius: 2rem;
+  }
+}
 .bill p {
   color: #5e7a7d;
   font-weight: 700;
+  position: relative;
+}
+.bill p::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 17px;
+  background-image: url("/images/icon-dollar.svg");
+  top: 2.7rem;
+  left: 1rem;
+  z-index: 1;
 }
 
-input {
+input[type=number] {
   font-weight: 700;
   width: 100%;
   padding: 0.5rem;
   background-color: #f4fafa;
-  border: none;
+  border: 2px solid transparent;
   color: #5e7a7d;
   font-size: 24px;
   text-align: right;
   border-radius: 0.4rem;
   margin-top: 0.2rem;
+  position: relative;
+}
+input[type=number]:hover {
+  border: 2px solid #26c0ab;
+  cursor: pointer;
+  height: calc(100% - 4px);
 }
 
 .tips {
@@ -65,15 +92,27 @@ input {
   justify-content: space-between;
   margin-top: 0.5rem;
 }
-.tips .tip-btn button {
+.tips .tip-btn button,
+.tips .tip-btn input[type=button] {
   background-color: #00494d;
   color: white;
   font-size: 24px;
+  font-weight: 500;
   margin: 0.4rem 0;
   width: calc(50% - 0.5rem);
   border: none;
   border-radius: 0.4rem;
   padding: 0.4rem 0;
+}
+.tips .tip-btn button:hover,
+.tips .tip-btn input[type=button]:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+  cursor: pointer;
+}
+.tips .tip-btn .custom {
+  background-color: #c5e4e7;
+  color: #5e7a7d;
 }
 
 .no-people {
@@ -82,8 +121,55 @@ input {
 .no-people P {
   color: #5e7a7d;
   font-weight: 700;
+  position: relative;
+}
+.no-people P::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 15px;
+  background-image: url("/images/icon-person.svg");
+  top: 2.7rem;
+  left: 1rem;
+  z-index: 1;
 }
 
+@media (min-width: 768px) {
+  .left {
+    width: 100%;
+    margin-right: 0.75rem;
+  }
+
+  .tips {
+    margin-top: 1.5rem;
+  }
+  .tips P {
+    color: #5e7a7d;
+    font-weight: 700;
+  }
+  .tips .tip-btn button {
+    flex-grow: 1;
+    width: 25%;
+  }
+  .tips .tip-btn button:nth-child(1) {
+    margin: 0 0.5rem 0.5rem 0;
+  }
+  .tips .tip-btn button:nth-child(2) {
+    margin: 0 0 0.5rem 0;
+  }
+  .tips .tip-btn button:nth-child(3) {
+    margin: 0 0 0.5rem 0.5rem;
+  }
+  .tips .tip-btn button:nth-child(4) {
+    margin: 0 0.5rem 0 0;
+  }
+  .tips .tip-btn button:nth-child(5) {
+    margin: 0 0 0 0;
+  }
+  .tips .tip-btn button:nth-child(6) {
+    margin: 0 0 0 0.5rem;
+  }
+}
 .right {
   background-color: #00494d;
   color: white;
@@ -91,15 +177,26 @@ input {
   border-radius: 0.4rem;
   margin-top: 1.5rem;
 }
-.right P {
+.right .costs-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.right .costs-info p {
   color: white;
   font-weight: 700;
 }
-.right P span {
+.right .costs-info p span {
   color: #5e7a7d;
   font-size: 0.9rem;
 }
-.right P:last-child {
+.right .costs-info .cost-look {
+  color: #26c0ab;
+  font-size: 36px;
+}
+.right .costs-info:last-child p {
   margin-top: 1.5rem;
 }
 .right .btn {
@@ -114,6 +211,17 @@ input {
   font-weight: 700;
   font-size: 20px;
   margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .right {
+    width: 100%;
+    margin-left: 0.75rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

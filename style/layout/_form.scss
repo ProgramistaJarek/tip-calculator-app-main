@@ -6,3 +6,13 @@ form {
   border-top-right-radius: 2rem;
   font-family: $font-Space-Mono;
 }
+
+@media (min-width: 768px) {
+  form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 768px;
+    margin: 0 auto;
+    border-radius: 2rem;
+  }
+}

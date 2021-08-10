@@ -4,28 +4,52 @@
   padding: 1.5rem;
   border-radius: 0.4rem;
   margin-top: 1.5rem;
-  P {
-    color: $white;
-    font-weight: $font-700;
-    span {
-      color: $dark-grayish-cyan;
-      font-size: 0.9rem;
+  .costs-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    p {
+      color: $white;
+      font-weight: $font-700;
+      span {
+        color: $dark-grayish-cyan;
+        font-size: 0.9rem;
+      }
     }
-    &:last-child{
+    .cost-look {
+      color: $strong-cyan;
+      font-size: $font-size*1.5;
+    }
+    &:last-child {
+      p {
         margin-top: 1.5rem;
+      }
     }
   }
-  .btn{
-      width: 100%;
-      border-radius: 0.4rem;
-      border: none;
-      background-color: $strong-cyan;
-      color: $very-dark-cyan;
-      font-weight: $font-700;
-      text-transform: uppercase;
-      padding: 0.75rem 0;
-      font-weight: $font-700;
-      font-size: 20px;
-      margin-top: 1.5rem;
+  .btn {
+    width: 100%;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
+    font-weight: $font-700;
+    text-transform: uppercase;
+    padding: 0.75rem 0;
+    font-weight: $font-700;
+    font-size: 20px;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .right {
+    width: 100%;
+    margin-left: 0.75rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
